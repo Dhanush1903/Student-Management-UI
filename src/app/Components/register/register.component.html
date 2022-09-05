@@ -1,0 +1,44 @@
+<h3>Register a Student</h3>
+<div>
+    
+</div>
+
+<div class="input-group">
+    <span class="input-group-text">First Name</span>
+    <input type="text"  placeholder="Enter your First Name" [(ngModel)]=student.firstName aria-label="First name"
+        class="form-control">
+
+</div>
+<br>
+<div class="input-group">
+    <span class="input-group-text">Last Name</span>
+    <input type="text"  placeholder="Enter your Last Name" [(ngModel)]=student.lastName aria-label="First name"
+        class="form-control">
+
+</div>
+
+
+<br>
+<div class="input-group">
+    <span class="input-group-text">Class</span>
+    <input type="text"   placeholder="Enter your Class Name" aria-label="Class" [(ngModel)]=student.classname
+        class="form-control">
+
+</div>
+<br>
+<div class="input-group">
+    <span class="input-group-text">DOB</span>
+    <input type="date"   aria-label="Enter your DOB" [(ngModel)]=student.dob
+        class="form-control">
+
+</div>
+
+
+
+
+
+
+<br>
+<button class="btn btn-primary" (click)="save()">Save</button>
+
+
