@@ -23,8 +23,8 @@
             <td>{{student.classname}}</td>
             <td>{{student.dob | date}}</td>
 
-            <td><button (click)="editStudent(student.id)">Edit</button>
-            <button (click)="deleteStudent(student.id)" style="margin: left 10px ;">Delete</button></td>
+            <td><button (click)="editStudent(student.id)" class="btn btn-warning">Edit</button>
+            <button (click)="deleteStudent(student.id)" class="btn btn-danger" style="margin: left 10px ;">Delete</button></td>
 
             
         </tr>
