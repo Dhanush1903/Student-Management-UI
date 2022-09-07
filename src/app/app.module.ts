@@ -13,6 +13,7 @@ import { HomeComponent } from './Components/home/home.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
 import { SearchClassComponent } from './Components/search-class/search-class.component';
 
+
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,7 +29,8 @@ import { SearchClassComponent } from './Components/search-class/search-class.com
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
-    FormsModule
+    FormsModule,
+   
 
   ],
   providers: [],

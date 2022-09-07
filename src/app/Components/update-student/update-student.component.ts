@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
+import { ActivatedRoute, Router } from '@angular/router';
 import Student from 'Entity/Student';
 import { StudentService } from 'src/app/student.service';
 
@@ -15,10 +15,12 @@ export class UpdateStudentComponent implements OnInit {
   students:Student[]=[];
 
   constructor(public studentService:StudentService,
+    private router:Router,
     private route:ActivatedRoute) { }
 
   ngOnInit(): void {
     this.student=new Student();
+    this.id=this.route.snapshot.params['id'];
   
     
   }
@@ -29,6 +31,7 @@ export class UpdateStudentComponent implements OnInit {
       (response:any)=>{
         console.log(response);
         alert("Updated Succesfully")
+        this.student=new Student();
       },
       function(error){
         console.log(error);
@@ -39,4 +42,7 @@ export class UpdateStudentComponent implements OnInit {
 
   }
 
-}
+
+  }
+
+
