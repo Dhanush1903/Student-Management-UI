@@ -11,6 +11,7 @@ import { AllstudentsComponent } from './Components/allstudents/allstudents.compo
 import { UpdateStudentComponent } from './Components/update-student/update-student.component';
 import { HomeComponent } from './Components/home/home.component';
 import { AboutUsComponent } from './Components/about-us/about-us.component';
+import { SearchClassComponent } from './Components/search-class/search-class.component';
 
 @NgModule({
   declarations: [
@@ -20,7 +21,8 @@ import { AboutUsComponent } from './Components/about-us/about-us.component';
     AllstudentsComponent,
     UpdateStudentComponent,
     HomeComponent,
-    AboutUsComponent
+    AboutUsComponent,
+    SearchClassComponent
   ],
   imports: [
     BrowserModule,

@@ -19,7 +19,7 @@ export class UpdateStudentComponent implements OnInit {
 
   ngOnInit(): void {
     this.student=new Student();
-    this.id=this.route.snapshot.params['id'];
+  
     
   }
 

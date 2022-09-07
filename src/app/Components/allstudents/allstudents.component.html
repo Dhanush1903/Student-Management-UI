@@ -1,5 +1,13 @@
 
 <div class="container">
+    <div class="input-group">
+        <span class="input-group-text"></span>
+        <input type="text"  placeholder="Please enter Class name" [(ngModel)]=student.classname aria-label="Class Name"
+            class="form-control">
+        
+        
+    <button class="btn btn-primary" (click)="getByClassname(student.classname)">Submit</button>
+    </div>
 <h2>Students List</h2>
 
 <table class="table table-dark table-striped-columns">

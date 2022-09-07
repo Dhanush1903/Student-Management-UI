@@ -48,4 +48,12 @@ this.router.navigate(['updateStudent',id])
 
   }
 
+  getByClassname(classname:number){
+    const promise=this.studentService.seachByClass(classname);
+    promise.subscribe((response)=>{
+      console.log(response);
+      this.students=response as Student[];
+    })
+  }
+
 }

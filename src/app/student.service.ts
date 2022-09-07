@@ -44,4 +44,8 @@ export class StudentService {
     deleteStudent(id:number){
       return this.http.delete(`http://localhost:8082/delete/${id}`);
     }
+
+    seachByClass(classname:number){
+      return this.http.get(`http://localhost:8082/getStudentclass/${classname}`);
+    }
 }

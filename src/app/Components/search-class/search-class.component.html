@@ -1,0 +1,33 @@
+<div class="container">
+
+    
+    <h2>Class List</h2>
+    
+    <table class="table table-dark table-striped-columns">
+        
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Class Name</th>
+                <th>Date Of Birth</th>
+                
+                <th>Action</th>
+    
+                
+            </tr>
+        </thead>
+        <tbody>
+            <tr *ngFor="let student of students">
+                <td>{{student.firstName}}</td>
+                <td>{{student.lastName}}</td>
+                <td>{{student.classname}}</td>
+                <td>{{student.dob | date}}</td>
+    
+    
+                
+            </tr>
+        </tbody>
+       
+      </table>
+    </div>
