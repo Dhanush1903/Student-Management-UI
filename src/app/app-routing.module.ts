@@ -5,6 +5,7 @@ import { AllstudentsComponent } from './Components/allstudents/allstudents.compo
 import { HomeComponent } from './Components/home/home.component';
 import { RegisterComponent } from './Components/register/register.component';
 import { SearchClassComponent } from './Components/search-class/search-class.component';
+
 import { UpdateStudentComponent } from './Components/update-student/update-student.component';
 
 const routes: Routes = [{path:'register',component:RegisterComponent},

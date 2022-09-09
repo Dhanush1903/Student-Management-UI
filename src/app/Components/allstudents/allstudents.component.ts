@@ -56,4 +56,14 @@ this.router.navigate(['updateStudent',id])
     })
   }
 
+
+  getByStudentId(id:number){
+    const promise=this.studentService.searchByid(id);
+    promise.subscribe((response)=>{
+      console.log(response);
+      this.students=response as Student[];
+    })
+
+  }
+
 }
